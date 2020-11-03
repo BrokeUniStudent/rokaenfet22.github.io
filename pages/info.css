@@ -1,0 +1,46 @@
+.card-container{
+  height:257px;
+  position:relative;
+  width:18rem;
+  perspective:200rem;
+}
+
+.card-container:hover .card-front{
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .card-back{
+  transform: rotateY(0deg);
+}
+
+.card-back{
+  transform: rotateY(180deg);
+}
+
+.card{
+  position:absolute;
+  transition:all 0.9s;
+  height:100%;
+  width:100%;
+  backface-visibility:hidden;
+  margin-top: 2rem;
+}
+
+.card-back .card-body{
+  position:relative;
+}
+
+.navbar {
+  padding: 1.2rem;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.navbar-title {
+  padding-left: 15px;
+}
+
+.navbar-nav li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
